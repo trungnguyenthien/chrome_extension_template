@@ -1,0 +1,45 @@
+body {
+  height: 100%;
+  background-color: #aaa;
+}
+
+/* Định dạng cho panel left */
+#panel-left {
+  padding: 5px;
+  position: fixed; /* Đặt panel left cố định ở vị trí left */
+  top: 0;
+  left: 0;
+  width: 300px; /* Đặt chiều rộng của panel left là 200px */
+  height: 100%; /* Đặt chiều cao của panel left bằng chiều cao của màn hình */
+  background-color: #ccc; /* Đặt màu nền cho panel left */
+  color:olive; /* Đặt màu chữ cho panel left */
+  overflow-y: scroll;
+}
+
+/* Định dạng cho panel right */
+#panel-right {
+  margin-left: 302px; /* Đặt margin-left cho panel right bằng chiều rộng của panel left */
+  height: 100%; /* Đặt chiều cao của panel right bằng chiều cao của màn hình */
+  overflow-y: scroll; /* Cho phép nội dung của panel right có thể scroll */
+}
+
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bec4c4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9bbce5;
+}
