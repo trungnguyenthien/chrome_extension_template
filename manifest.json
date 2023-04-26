@@ -1,15 +1,20 @@
 {
     "manifest_version": 3,
-    "name": "My Extension",
+    "name": "MANGO",
     "version": "1.0",
     "description": "A simple Chrome extension",
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon48.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
     "action": {
-        "default_popup": "popup.html",
         "default_icon": {
-            "16": "images/mango-16X16.png",
-            "32": "images/mango-48x48.png",
-            "48": "images/mango-48x48.png",
-            "128": "images/mango-128x128.png"
+            "16": "images/icon16.png",
+            "32": "images/icon48.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
         }
     },
     "background": {
@@ -20,7 +25,8 @@
         "webNavigation",
         "downloads",
         "commands",
-        "cookies"
+        "cookies",
+        "storage"
     ],
     "host_permissions": [
         "*://*/*"
@@ -44,7 +50,8 @@
                 "libs/chrome-extension-async.js",
                 "libs/jquery-3.6.0.min.js",
                 "libs/bootstrap.bundle.min.js",
-                "libs/bootstrap.min.css"
+                "libs/bootstrap.min.css",
+                "common.js"
             ],
             "matches": []
         },
