@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
@@ -38,12 +39,12 @@ module.exports = {
     //plugins là một mảng các plugin để giúp webpack tự động tạo ra các file HTML, CSS và hình ảnh.
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
+        new HtmlWebPackPlugin({
             template: './src/template.html',
             filename: 'popup.html',
             chunks:['popup']
         }),
-        new HtmlWebpackPlugin({
+        new HtmlWebPackPlugin({
             template: './src/template.html',
             filename: 'option.html',
             chunks:['option']
