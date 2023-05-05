@@ -39,7 +39,7 @@
             "description": "Open my extension"
         }
     },
-    "options_page": "options.html",
+    "options_page": "option.html",
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'"
     },
